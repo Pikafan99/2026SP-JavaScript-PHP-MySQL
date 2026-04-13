@@ -1,0 +1,74 @@
+create database web19101
+
+CREATE TABLE web19101.captions (
+  caption_id int not NULL auto_increment,
+  caption text NULL,
+  create_dt date NULL,
+  primary key (caption_id));
+
+  CREATE TABLE web19101.images (
+  img_id int not NULL auto_increment,
+  img_loc varchar(255) NULL,
+  caption_id int NULL,
+  create_dt date NULL,
+  primary key (img_id));
+
+  
+
+  insert into captions(caption, create_dt)
+  values('International Space Station fourth expansion [2009]', sysdate());
+  insert into captions(caption, create_dt)
+  values('Assembling the International Space Station [1998]', sysdate());
+  insert into captions(caption_id, caption, create_dt)
+  values('The Atlantis docks with the ISS [2001]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The Atlantis approaches the ISS [2000]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The Atlantis approaches the ISS [2000]', sysdate());
+  insert into captions(caption, create_dt)
+  values('International Space Station over Earth [2002]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The International Space Station first expansion [2002]', sysdate());
+  insert into captions(caption, create_dt)
+  values('Hurricane Ivan from the ISS [2008]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The Soyuz spacecraft approaches the ISS [2005]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The International Space Station from above [2006]', sysdate());
+  insert into captions(caption, create_dt)
+  values('Maneuvering in space with the Canadarm2 [2006]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The International Space Station second expansion [2006]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The International Space Station third expansion [2007]', sysdate());
+  insert into captions(caption, create_dt)
+  values('The ISS over the Ionian Sea [2007]', sysdate());
+
+  insert into images(img_loc, caption_id, create_dt)
+  values('img/slide0.jpg', 1, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide1.jpg', 2, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide2.jpg', 3, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide3.jpg', 4, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide4.jpg', 5, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide5.jpg', 6, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide6.jpg', 7, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide7.jpg', 8, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide8.jpg', 9, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide9.jpg', 10, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide10.jpg', 11, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide11.jpg', 12, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide12.jpg', 13, sysdate());
+    insert into images(img_loc, caption_id, create_dt)
+  values('img/slide13.jpg', 14, sysdate());
