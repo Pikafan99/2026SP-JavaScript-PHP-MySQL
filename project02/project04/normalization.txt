@@ -1,0 +1,11 @@
+Employee_ID (Primary Key)
+employee_details table
+=============================
+
+Employee_Name
+Department_ID
+Department_Name
+Manager_ID
+Manager_Name
+
+=============================
